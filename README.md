@@ -35,7 +35,7 @@ Fill in the sections below yourself, then:
 ## 🔥LAB671: Build a proactive intelligence agent using Work IQ
 ### Session description
 
-Add your session description here. Keep it concise — 2-3 sentences about what attendees will learn and why it matters.
+Step into the role of a sales leader at Zava, a fictional specialty coffee roaster, and use Work IQ to find the deal risk your CRM can't see. You'll combine Dynamics 365 opportunities and service cases with your team's email, Teams conversations, and seasonal program announcements to spot stalled renewals and missed pre-book offers. Then you'll act on what you find, without leaving the chat.
 
 ### 🚀 Getting started
 
@@ -43,33 +43,36 @@ Add your session description here. Keep it concise — 2-3 sentences about what 
 
 If you're following along during a live session:
 
-1. Step 1
-2. Step 2
-3. Open [`instructions/`](instructions/README.md) when this session includes
-   attendee step-by-step guidance
+1. Sign in to the lab environment with the credentials on the **Instructions** tab.
+2. Open Microsoft 365 Copilot at `https://m365.cloud.microsoft/chat`.
+3. Follow the steps in [`instructions/`](instructions/README.md), starting with Scenario 1.
 
 #### On your own
 
 If you're learning at your own pace:
 
-1. Clone this repository
-2. Set up your environment
-3. Follow the session guidance in [`instructions/`](instructions/README.md), or
-   use the linked docs-site entry point when this repository uses that pattern
+1. Read the scenario, people, and data in the [lab guide](instructions/lab671-instructions.md).
+2. Work through Scenario 1 and Scenario 2, comparing the prompts with the expected results.
+3. Try similar prompts against your own Dynamics 365 and Microsoft 365 data.
+
+> [!NOTE]
+> The lab runs against a pre-seeded Zava environment. The expected results in the guide match that data only.
 
 ### 🎯 Learning outcomes
 
 By the end of this session, you will be able to:
 
-- Outcome 1
-- Outcome 2
-- Outcome 3
+- Use Work IQ to combine Dynamics 365 sales and service data with Microsoft 365 email and Teams conversations to find deal risk that isn't visible in CRM alone.
+- Explain how Work IQ respects user permissions, answering only from the data the signed-in user can access.
+- Turn findings into action from the chat by creating CRM notes and tasks, drafting email, posting to Teams, and scheduling meetings, with approval before each change.
 
 ### 💻 Technologies used
 
-- Technology 1
-- Technology 2
-- Technology 3
+1. Work IQ
+2. [Microsoft 365 Copilot](https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-overview)
+3. [Dynamics 365 Sales](https://learn.microsoft.com/dynamics365/sales/)
+4. [Dynamics 365 Customer Service](https://learn.microsoft.com/dynamics365/customer-service/)
+5. [Microsoft Teams](https://learn.microsoft.com/microsoftteams/)
 
 ### 📚 Continue your learning
 
