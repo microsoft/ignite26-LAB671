@@ -15,8 +15,8 @@ Zava is a fictional specialty coffee roaster. It sells whole-bean coffee and a n
 
 | Item | Details |
 |---|---|
-| Seasonal program | **Spring '27 Pre-Book Program**: 10% off spring orders placed by **October 31**, plus guaranteed allocation of Zava Nitro Cold Brew. The new canned line launches in spring with limited supply in its first year. Patti Fernandez (VP of Sales) announced the program by email to all account teams on Tuesday, September 15, and followed up in the **Zava Sales › All Hands** channel. |
-| Sales strategy | The Q4 priority is to win spring shelf space early, because grocers set their spring coffee and cold brew shelf plans in the fall. The Holiday Blend launch campaign starts Monday, November 2, and retailers who pre-book get co-op marketing funds for in-store displays. |
+| Seasonal program | **Spring '27 Pre-Book Program**: 10% off spring orders placed by **@lab.Variable(PreBookDeadline)**, plus guaranteed allocation of Zava Nitro Cold Brew. The new canned line launches in spring with limited supply in its first year. Patti Fernandez (VP of Sales) announced the program by email to all account teams on @lab.Variable(PreBookAnnouncedLong), and followed up in the **Zava Sales › All Hands** channel. |
+| Sales strategy | The Q4 priority is to win spring shelf space early, because grocers set their spring coffee and cold brew shelf plans in the fall. The Holiday Blend launch campaign starts @lab.Variable(HolidayLaunchLong), and retailers who pre-book get co-op marketing funds for in-store displays. |
 | Hero customer | **Northwind Traders** (West), a regional grocery chain with 45 stores. Alex Wilber manages the account, which is in Diego Siciliani's region. Its yearly wholesale supply agreement is up for renewal. |
 
 ## Who's who
@@ -35,7 +35,7 @@ Zava is a fictional specialty coffee roaster. It sells whole-bean coffee and a n
 > In Dynamics 365 you can see every region. In Microsoft 365 you see only the email, chats, and channels you have access to. This difference is intentional, and you'll test it in Scenario 2.
 
 > [!Note]
-> The lab data is dated as if today is **October 1**. Dates such as "the last 30 days" and "no activity in 14+ days" are relative to that date.
+> The lab data is dated relative to the day your lab started, **@lab.Variable(LabToday)**, so the dates in your environment match the dates in these instructions. Phrases such as "the last 30 days" and "no activity in 14+ days" are relative to that day.
 
 ===
 
@@ -79,10 +79,10 @@ Northwind Traders, a 45-store grocery chain in the West, is up for renewal. Your
 
     | Finding | What to look for |
     |---|---|
-    | Opportunity | **Northwind Traders – FY27 Wholesale Supply Agreement Renewal**: $483,600, Propose stage, 60% probability, closing November 13. The last completed activity was on September 10. |
+    | Opportunity | **Northwind Traders – FY27 Wholesale Supply Agreement Renewal**: $483,600, Propose stage, 60% probability, closing @lab.Variable(NorthwindClose). The last completed activity was on @lab.Variable(NorthwindLastActivity). |
     | Service issue | An open, high-priority case: Holiday Blend was short-shipped to two of three distribution centers. |
-    | Unanswered customer need | On September 22, Adele asked in the West channel whether Northwind can get guaranteed Nitro Cold Brew allocation for its spring reset. Nobody has answered. |
-    | Missed program connection | The September 15 Pre-Book announcement offers guaranteed allocation, but there's no sign anyone has offered it to Northwind. The deadline is October 31. |
+    | Unanswered customer need | On @lab.Variable(AdeleQuestion), Adele asked in the West channel whether Northwind can get guaranteed Nitro Cold Brew allocation for its spring reset. Nobody has answered. |
+    | Missed program connection | The @lab.Variable(PreBookAnnounced) Pre-Book announcement offers guaranteed allocation, but there's no sign anyone has offered it to Northwind. The deadline is @lab.Variable(PreBookDeadline). |
 
 > [!Knowledge]
 > **Takeaway:** Dynamics shows 60%, but the renewal is at risk. The Pre-Book Program answers the buyer's question, if someone offers it in time.
@@ -95,9 +95,9 @@ Now act on what you found without leaving the chat.
 
 1. [] Enter the following prompt:
 
-    ++Add a note to the Northwind renewal summarizing the risks you found, including that no Pre-Book offer has been made, and create a task for Alex due October 9 to offer the program and confirm cold brew allocation.++
+    ++Add a note to the Northwind renewal summarizing the risks you found, including that no Pre-Book offer has been made, and create a task for Alex due @lab.Variable(FollowUpDue) to offer the program and confirm cold brew allocation.++
 
-1. [] Review the note and the task. Confirm that the task is assigned to Alex Wilber and is due **October 9**.
+1. [] Review the note and the task. Confirm that the task is assigned to Alex Wilber and is due **@lab.Variable(FollowUpDue)**.
 1. [] Approve the note and the task.
 
 > [!Note]
@@ -118,7 +118,7 @@ Now act on what you found without leaving the chat.
 
 1. [] Enter the following prompt:
 
-    ++Find 30 minutes for me, Alex and Adele by October 9 and send an invite called 'Northwind renewal – save plan.'++
+    ++Find 30 minutes for me, Alex and Adele by @lab.Variable(FollowUpDue) and send an invite called 'Northwind renewal – save plan.'++
 
 1. [] Review the proposed time before you confirm. You're on Central Time; Alex and Adele are on Pacific Time. Check that the invite shows the right time for each person.
 
@@ -138,7 +138,7 @@ Northwind's missed offer may not be a one-off. Now you check whether Pre-Book of
 1. [] Start a new chat.
 1. [] Enter the following prompt:
 
-    ++For each region, how many open renewals over $250K closing by December 31 have been offered the Spring '27 Pre-Book Program? Count a deal as offered if a completed Dynamics activity or a post in the West, Central or East channel confirms it was offered. Which region has the lowest coverage, and which of its renewals have had no completed customer activity in the last 14 days?++
+    ++For each region, how many open renewals over $250K closing by @lab.Variable(CloseBy) have been offered the Spring '27 Pre-Book Program? Count a deal as offered if a completed Dynamics activity or a post in the West, Central or East channel confirms it was offered. Which region has the lowest coverage, and which of its renewals have had no completed customer activity in the last 14 days?++
 
     > [+Hint] The answer only uses Dynamics data
     >
@@ -159,19 +159,19 @@ Northwind's missed offer may not be a one-off. Now you check whether Pre-Book of
 
     | Renewal | Value | Close | Stage | Last completed activity | Pre-Book offered | Stalled |
     |---|---|---|---|---|---|---|
-    | Northwind Traders | $483,600 | Nov 13 | Propose | Sep 10 (21 days) | No | Yes |
-    | Wide World Importers | $307,250 | Dec 4 | Develop | Sep 14 (17 days) | No | Yes |
-    | Fourth Coffee | $262,900 | Dec 18 | Propose | Sep 16 (15 days) | No | Yes |
-    | Contoso Retail | $296,400 | Nov 20 | Propose | Sep 25 | Yes, logged call | No |
-    | Tailwind Traders | $341,750 | Dec 11 | Develop | Sep 23 | Yes, West channel only | No |
-    | Alpine Ski House | $253,800 | Dec 23 | Develop | Sep 24 | No | No |
+    | Northwind Traders | $483,600 | @lab.Variable(NorthwindClose) | Propose | @lab.Variable(NorthwindLastActivity) (@lab.Variable(NorthwindDaysSince) days) | No | Yes |
+    | Wide World Importers | $307,250 | @lab.Variable(WideWorldClose) | Develop | @lab.Variable(WideWorldLastActivity) (@lab.Variable(WideWorldDaysSince) days) | No | Yes |
+    | Fourth Coffee | $262,900 | @lab.Variable(FourthCoffeeClose) | Propose | @lab.Variable(FourthCoffeeLastActivity) (@lab.Variable(FourthCoffeeDaysSince) days) | No | Yes |
+    | Contoso Retail | $296,400 | @lab.Variable(ContosoClose) | Propose | @lab.Variable(ContosoLastActivity) | Yes, logged call | No |
+    | Tailwind Traders | $341,750 | @lab.Variable(TailwindClose) | Develop | @lab.Variable(TailwindLastActivity) | Yes, West channel only | No |
+    | Alpine Ski House | $253,800 | @lab.Variable(AlpineClose) | Develop | @lab.Variable(AlpineLastActivity) | No | No |
 
     A good answer includes:
 
     - **Regional coverage:** West has offered Pre-Book on 2 of 6 qualifying renewals, compared with 4 of 5 in Central and 6 of 7 in East.
     - **Evidence outside CRM:** Lee Gu's West-channel post says he offered the program to Tailwind Traders, but it was never logged in Dynamics.
     - **Stalled renewals:** Northwind Traders, Wide World Importers, and Fourth Coffee have had no completed customer activity in the last 14 days.
-    - **Connection to Scenario 1:** Northwind is part of a wider West gap. Retailers that miss the October 31 deadline also lose co-op marketing funds for the Holiday Blend launch.
+    - **Connection to Scenario 1:** Northwind is part of a wider West gap. Retailers that miss the @lab.Variable(PreBookDeadline) deadline also lose co-op marketing funds for the Holiday Blend launch.
 
 > [!Knowledge]
 > **Takeaway:** West has three separate problems: low program coverage, stalled deals, and offers that aren't logged in CRM. Each needs a different follow-up.
@@ -195,9 +195,9 @@ Alex and Diego have a private chat about Northwind. You aren't part of it.
 
 1. [] Enter the following prompt:
 
-    ++Create a follow-up task on each of the three stalled West renewals, assigned to Diego and due October 9, to re-engage the buyer and offer Spring '27 Pre-Book.++
+    ++Create a follow-up task on each of the three stalled West renewals, assigned to Diego and due @lab.Variable(FollowUpDue), to re-engage the buyer and offer Spring '27 Pre-Book.++
 
-1. [] Review the tasks. Confirm there's one task each for Northwind Traders, Wide World Importers, and Fourth Coffee, assigned to Diego and due **October 9**.
+1. [] Review the tasks. Confirm there's one task each for Northwind Traders, Wide World Importers, and Fourth Coffee, assigned to Diego and due **@lab.Variable(FollowUpDue)**.
 1. [] Approve the tasks.
 
 > [!Note]
@@ -207,12 +207,12 @@ Alex and Diego have a private chat about Northwind. You aren't part of it.
 
 1. [] Enter the following prompt:
 
-    ++Write a short post for the West channel about the October 31 Pre-Book deadline and guaranteed cold brew allocation. Show it to me before posting.++
+    ++Write a short post for the West channel about the @lab.Variable(PreBookDeadline) Pre-Book deadline and guaranteed cold brew allocation. Show it to me before posting.++
 
 1. [] Review the post, then approve it.
 1. [] **Optional:** Enter the following prompt to answer Adele's open question:
 
-    ++Draft a reply to Adele's September 22 allocation question and show it to me before posting.++
+    ++Draft a reply to Adele's @lab.Variable(AdeleQuestion) allocation question and show it to me before posting.++
 
 > [!Note]
 > Teams has no drafts. Work IQ shows you the text in the chat and posts only after you approve.
@@ -221,7 +221,7 @@ Alex and Diego have a private chat about Northwind. You aren't part of it.
 
 1. [] Enter the following prompt:
 
-    ++Find 30 minutes for me and Diego by October 9 to review the West pipeline and send the invite.++
+    ++Find 30 minutes for me and Diego by @lab.Variable(FollowUpDue) to review the West pipeline and send the invite.++
 
 1. [] Check that the time is right in both Central Time (yours) and Pacific Time (Diego's) before you confirm.
 

@@ -11,5 +11,6 @@ The guide uses [Skillable Markdown syntax](https://docs.skillable.com/docs/creat
 | `++text++` | Text attendees can copy, such as a prompt |
 | `+++text+++` | Text Skillable can type for attendees, such as credentials |
 | `@lab.CloudPortalCredential(User1).Username` | Replaced with the attendee's lab username |
+| `@lab.Variable(PreBookDeadline)` | Replaced with a date computed when the lab launches. See [Lab dates](../infra/README.md#lab-dates). |
 | `> [!Note]`, `> [!Alert]`, `> [!Hint]`, `> [!Knowledge]` | Callout blocks |
 | `> [+Hint]` | Expandable hint |
