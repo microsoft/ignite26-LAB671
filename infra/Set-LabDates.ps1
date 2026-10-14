@@ -71,6 +71,7 @@ $holidayLaunch = Get-BusinessDay $holidayLaunch 'Forward'
 $dates = [ordered]@{
     LabToday              = $d0
     PreBookAnnounced      = Past 16
+    ShipmentIssue         = Past 13
     AdeleQuestion         = Past 9
     FollowUpDue           = Future 8
     PreBookDeadline       = $preBookDeadline
@@ -96,7 +97,7 @@ function DaysAgo([string]$Key) { ($d0 - $dates[$Key]).Days }
 $checks = @(
     @{ Ok = (DaysAgo NorthwindLastActivity) -ge 14 -and (DaysAgo WideWorldLastActivity) -ge 14 -and (DaysAgo FourthCoffeeLastActivity) -ge 14; Msg = 'Stalled West renewals must be 14+ days old.' }
     @{ Ok = (DaysAgo TailwindLastActivity) -lt 14 -and (DaysAgo AlpineLastActivity) -lt 14 -and (DaysAgo ContosoLastActivity) -lt 14; Msg = 'Active West renewals must be under 14 days old.' }
-    @{ Ok = (DaysAgo PreBookAnnounced) -le 30 -and (DaysAgo AdeleQuestion) -le 30; Msg = 'M365 evidence must fall in the last 30 days.' }
+    @{ Ok = (DaysAgo PreBookAnnounced) -le 30 -and (DaysAgo ShipmentIssue) -le 30 -and (DaysAgo AdeleQuestion) -le 30; Msg = 'M365 evidence must fall in the last 30 days.' }
     @{ Ok = $dates.AdeleQuestion -gt $dates.PreBookAnnounced; Msg = "Adele's question must follow the Pre-Book announcement." }
     @{ Ok = $dates.FollowUpDue -lt $dates.PreBookDeadline -and $dates.PreBookDeadline -lt $dates.HolidayLaunch; Msg = 'Follow-up must precede the deadline, which must precede the Holiday Blend launch.' }
     @{ Ok = $dates.PreBookDeadline -lt $dates.NorthwindClose -and $dates.AlpineClose -le $dates.CloseBy; Msg = 'Renewals must close after the deadline and by the CloseBy filter.' }

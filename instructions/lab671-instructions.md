@@ -1,6 +1,6 @@
 # Work IQ + Dynamics 365: Find the deal risk your CRM can't see
 
-Step into the role of a sales leader at Zava, a specialty coffee roaster. You'll combine Dynamics 365 opportunities and service cases with your team's email, Teams chats, and seasonal program announcements. You'll use them to spot stalled grocery renewals and missed pre-book offers, then act on them without leaving the chat.
+Step into the role of a sales leader at Zava, a specialty coffee roaster. You'll combine Dynamics 365 opportunities with your team's email, Teams chats, and seasonal program announcements. You'll use them to spot stalled grocery renewals and missed pre-book offers, then act on them without leaving the chat.
 
 **Time:** About 30 minutes, hands-on.
 
@@ -11,7 +11,7 @@ Step into the role of a sales leader at Zava, a specialty coffee roaster. You'll
 
 ## About Zava
 
-Zava is a fictional specialty coffee roaster. It sells whole-bean coffee and a new canned cold brew wholesale to grocery chains, café groups, and hospitality accounts in three sales regions: West, Central, and East. Its sales and service teams use Dynamics 365 Sales, Dynamics 365 Customer Service, and Microsoft 365.
+Zava is a fictional specialty coffee roaster. It sells whole-bean coffee and a new canned cold brew wholesale to grocery chains, café groups, and hospitality accounts in three sales regions: West, Central, and East. Its sales and service teams use Dynamics 365 Sales and Microsoft 365.
 
 | Item | Details |
 |---|---|
@@ -73,19 +73,19 @@ Northwind Traders, a 45-store grocery chain in the West, is up for renewal. Your
 1. [] In Microsoft 365 Copilot, start a new chat.
 1. [] Enter the following prompt:
 
-    ++Give me the state of the Northwind Traders renewal, including the Dynamics opportunity, any open service cases, what the account team has discussed in email and Teams I can access over the last 30 days, and whether there is evidence that anyone has offered Northwind the Spring '27 Pre-Book Program.++
+    ++Give me the state of the Northwind Traders renewal, including the Dynamics opportunity, what the account team and Customer Care have discussed in email and Teams I can access over the last 30 days, and whether there is evidence that anyone has offered Northwind the Spring '27 Pre-Book Program.++
 
 1. [] Review the response. A good answer includes:
 
     | Finding | What to look for |
     |---|---|
     | Opportunity | **Northwind Traders – FY27 Wholesale Supply Agreement Renewal**: $483,600, Propose stage, 60% probability, closing @lab.Variable(NorthwindClose). The last completed activity was on @lab.Variable(NorthwindLastActivity). |
-    | Service issue | An open, high-priority case: Holiday Blend was short-shipped to two of three distribution centers. |
+    | Shipment issue | On @lab.Variable(ShipmentIssue), Isaiah Langer in Customer Care emailed that Holiday Blend was short-shipped to two of Northwind's three distribution centers. It's still unresolved. |
     | Unanswered customer need | On @lab.Variable(AdeleQuestion), Adele asked in the West channel whether Northwind can get guaranteed Nitro Cold Brew allocation for its spring reset. Nobody has answered. |
     | Missed program connection | The @lab.Variable(PreBookAnnounced) Pre-Book announcement offers guaranteed allocation, but there's no sign anyone has offered it to Northwind. The deadline is @lab.Variable(PreBookDeadline). |
 
 > [!Knowledge]
-> **Takeaway:** Dynamics shows 60%, but the renewal is at risk. The Pre-Book Program answers the buyer's question, if someone offers it in time.
+> **Takeaway:** Dynamics shows 60%, but the renewal is at risk. The deal record doesn't show the shipment problem or the buyer's open question; both are only in email and Teams. The Pre-Book Program answers the buyer's question, if someone offers it in time.
 
 ## Close the loop
 
@@ -95,7 +95,7 @@ Now act on what you found without leaving the chat.
 
 1. [] Enter the following prompt:
 
-    ++Add a note to the Northwind renewal summarizing the risks you found, including that no Pre-Book offer has been made, and create a task for Alex due @lab.Variable(FollowUpDue) to offer the program and confirm cold brew allocation.++
+    ++Add a note to the Northwind renewal summarizing the risks you found, including the shipment issue and that no Pre-Book offer has been made, and create a task for Alex due @lab.Variable(FollowUpDue) to offer the program and confirm cold brew allocation.++
 
 1. [] Review the note and the task. Confirm that the task is assigned to Alex Wilber and is due **@lab.Variable(FollowUpDue)**.
 1. [] Approve the note and the task.
@@ -107,9 +107,9 @@ Now act on what you found without leaving the chat.
 
 1. [] Enter the following prompt:
 
-    ++Draft an email from me to Alex, cc Adele and Diego, covering the Pre-Book offer, the answer to the buyer's cold brew allocation question, and the status of the short-shipment case. Save it as a draft; don't send it.++
+    ++Draft an email from me to Alex, cc Adele, Diego and Isaiah, covering the Pre-Book offer, the answer to the buyer's cold brew allocation question, and the status of the Holiday Blend shipment issue. Save it as a draft; don't send it.++
 
-1. [] Review the draft. Confirm that it's addressed to Alex, with Adele and Diego on cc.
+1. [] Review the draft. Confirm that it's addressed to Alex, with Adele, Diego, and Isaiah on cc.
 
 > [!Note]
 > The email is saved to your **Drafts** folder and isn't sent.
@@ -236,7 +236,7 @@ Congratulations! You used Work IQ in Microsoft 365 Copilot to find deal risk tha
 
 In this lab, you:
 
-- [] Combined a Dynamics 365 opportunity and service case with email and Teams conversations to show that a 60% renewal was really at risk.
+- [] Combined a Dynamics 365 opportunity with email and Teams conversations to show that a 60% renewal was really at risk.
 - [] Found a Pre-Book offer that existed only in a Teams channel post and was never logged in CRM.
 - [] Confirmed that Work IQ answers only from the sources you're allowed to access.
 - [] Recorded notes and tasks, drafted an email, posted to Teams, and scheduled meetings from the same chat, approving each action first.
