@@ -35,7 +35,7 @@ Fill in the sections below yourself, then:
 ## 🔥LAB671: Build a proactive intelligence agent using Work IQ
 ### Session description
 
-Step into the role of a sales leader at Zava, a fictional specialty coffee roaster, and use Work IQ to find the deal risk your CRM can't see. You'll combine Dynamics 365 opportunities and service cases with your team's email, Teams conversations, and seasonal program announcements to spot stalled renewals and missed pre-book offers. Then you'll act on what you find, without leaving the chat.
+Step into the role of a sales leader at Zava, a fictional specialty coffee roaster, and use Work IQ to find the deal risk your CRM can't see. You'll combine Dynamics 365 opportunities with your team's email, Teams conversations, and seasonal program announcements to spot stalled renewals and missed pre-book offers. Then you'll act on what you find, without leaving the chat.
 
 ### 🚀 Getting started
 
@@ -62,7 +62,7 @@ If you're learning at your own pace:
 
 By the end of this session, you will be able to:
 
-- Use Work IQ to combine Dynamics 365 sales and service data with Microsoft 365 email and Teams conversations to find deal risk that isn't visible in CRM alone.
+- Use Work IQ to combine Dynamics 365 Sales data with Microsoft 365 email and Teams conversations to find deal risk that isn't visible in CRM alone.
 - Explain how Work IQ respects user permissions, answering only from the data the signed-in user can access.
 - Turn findings into action from the chat by creating CRM notes and tasks, drafting email, posting to Teams, and scheduling meetings, with approval before each change.
 
@@ -71,8 +71,7 @@ By the end of this session, you will be able to:
 1. Work IQ
 2. [Microsoft 365 Copilot](https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-overview)
 3. [Dynamics 365 Sales](https://learn.microsoft.com/dynamics365/sales/)
-4. [Dynamics 365 Customer Service](https://learn.microsoft.com/dynamics365/customer-service/)
-5. [Microsoft Teams](https://learn.microsoft.com/microsoftteams/)
+4. [Microsoft Teams](https://learn.microsoft.com/microsoftteams/)
 
 ### 📚 Continue your learning
 

@@ -24,6 +24,7 @@ Past dates move back to the previous business day, which only makes items older.
 | `WideWorldLastActivity` | −17 | Wide World Importers last completed activity (stalled) |
 | `PreBookAnnounced` | −16 | Patti's Pre-Book email and All Hands post |
 | `FourthCoffeeLastActivity` | −15 | Fourth Coffee last completed activity (stalled) |
+| `ShipmentIssue` | −13 | Isaiah's Customer Care email about the Holiday Blend short shipment |
 | `AdeleQuestion` | −9 | Adele's unanswered West-channel allocation question |
 | `TailwindLastActivity` | −8 | Tailwind Traders last completed activity |
 | `AlpineLastActivity` | −7 | Alpine Ski House last completed activity |
@@ -48,6 +49,7 @@ For example, a lab launched on November 17, 2026 gets a Pre-Book deadline of Dec
 - Date the Central and East renewals and any other seeded items with the same rules, so the Scenario 2 counts (for example, one stalled Central renewal) hold on any launch day.
 - Calendar busy blocks for Megan, Alex, Adele, and Diego must also be relative to Day 0 so a 30-minute slot exists before `FollowUpDue`.
 - Any dates written in seeded message text, such as "order by December 1" in Patti's email, must use these values.
+- Seed the Holiday Blend short shipment only as Isaiah's email to the account team (Megan must be a recipient). The lab doesn't use Dynamics 365 Customer Service, so don't create a service case for it.
 - The script throws an error if a launch day would break the expected results. It passes for every launch day from October 13, 2026 through November 17, 2027.
 
 ### Test locally
