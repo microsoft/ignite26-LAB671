@@ -9,11 +9,13 @@ The guide uses [Skillable Markdown syntax](https://docs.skillable.com/docs/creat
 | `===` | Page break |
 | `1. []` | Step with a progress checkbox |
 | `++text++` | Text attendees can copy, such as a prompt |
-| `+++text+++` | Text Skillable can type for attendees, such as credentials |
+| `+++text+++` | Text Skillable can type for attendees, such as usernames |
 | `@lab.CloudPortalCredential(User1).Username` | Replaced with the attendee's lab username |
 | `@lab.VirtualMachine(Win11-Pro-Base).Username` | Replaced with the lab computer's Windows username |
 | `> [!Note]` | Callout block |
 | `> [+Hint]` | Expandable hint |
+
+The guide shows usernames only. Passwords and the Temporary Access Pass aren't written in the guide or this repo; attendees get them from the lab.
 
 ## Screenshots
 

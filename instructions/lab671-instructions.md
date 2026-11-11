@@ -4,18 +4,16 @@
   Before publishing, confirm with the @lab button in the editor:
     - the VM name in the @lab.VirtualMachine(...) tokens
     - the credential name in the @lab.CloudPortalCredential(...) tokens
-  Prompts use ++text++ (select to copy, paste with Ctrl+V). Credentials use +++text+++ (typed into the VM).
+  Prompts use ++text++ (select to copy, paste with Ctrl+V). Usernames use +++text+++ (typed into the VM). No passwords are written in this guide.
   Dates are relative to the lab day, so no edits are needed per session.
 -->
 If Windows asks you to sign in, use:
 
 - Username: ++@lab.VirtualMachine(Win11-Pro-Base).Username++
-- Password: +++@lab.VirtualMachine(Win11-Pro-Base).Password+++
 
 Use this account for Microsoft 365 and Dynamics 365:
 
 - Username: +++@lab.CloudPortalCredential(User1).Username+++
-- Password: +++@lab.CloudPortalCredential(User1).Password+++
 
 ## About this lab
 
@@ -52,13 +50,11 @@ Your inbox, the **Zava Sales** team in Teams and the Dynamics 365 Sales records 
 
 # Get started
 
-1. [] If Windows is locked, sign in with the Windows credentials on the first page.
+1. [] If Windows is locked, sign in with the Windows account shown on the first page and the password on the **Resources** tab.
 1. [] Open **Microsoft Edge** and go to ++https://m365.cloud.microsoft/chat++ to open **Microsoft 365 Copilot**.
-1. [] Sign in with:
-    - Username: +++@lab.CloudPortalCredential(User1).Username+++
-    - Password: +++@lab.CloudPortalCredential(User1).Password+++
+1. [] Sign in with your lab username: +++@lab.CloudPortalCredential(User1).Username+++
 
-    If you're asked for a **Temporary Access Pass**, select **Use your password instead** and enter the password above. If you're asked to stay signed in, select **Yes**. Dismiss any first-run tips.
+    If you're asked for a password or a **Temporary Access Pass**, use the one shown on the **Resources** tab of the lab. If you're asked to stay signed in, select **Yes**. Dismiss any first-run tips.
 
 1. [] Open a new tab and go to ++https://outlook.office.com++. Your inbox should include an email from **Patti Fernandez** about the **Spring '27 Pre-Book Program**.
 
