@@ -103,10 +103,18 @@ For more information, visit the [Learn MCP Server repo](https://aka.ms/learnmcp)
 
 ### 👥 Content owners
 
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
+## Content owners
+
+## Content owners
+
+<table>
+<tr>
+<td align="center"><img src="images/owners/nathan-helgren.png" width="120"><br><b>Nathan Helgren</b><br>Principal Product Manager</td>
+<td align="center"><img src="images/owners/brian-hertzog.png" width="120"><br><b>Brian Hertzog</b><br>Technical Program Manager</td>
+<td align="center"><img src="images/owners/paolo-pialorsi.png" width="120"><br><b>Paolo Pialorsi</b><br>Senior Copilot Advocate</td>
+<td align="center"><img src="images/owners/lior-kamrat.png" width="120"><br><b>Lior Kamrat</b><br>Principal Product Architect</td>
+</tr>
+</table>
 
 <table>
 <tr>
