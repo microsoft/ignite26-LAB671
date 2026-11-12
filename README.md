@@ -1,31 +1,3 @@
-## Before you're done
-
-This repo has been created for your Microsoft Ignite 2026 session. Here's how to get it ready.
-
-**Easiest path — use the agent (recommended):**
-
-- Open GitHub Copilot Chat and say `help me initialize repo`. The agent will walk you through getting the README populated.
-- When you're ready to publish, say `help me finalize repo`. The agent will clean up unused folders, validate everything, and remove this "Before you're done" section and other extra stuff that attendees don't need to see.
-- Curious how it works? Read the [agent workflow](.github/AGENT-WORKFLOW.md).
-
-**Doing it manually?**
-
-Fill in the sections below yourself, then:
-
-- Delete any placeholder folders you don't need (`data/`, `infra/`, etc.)
-- Delete this "Before you're done" section
-- Delete `.github/agents/`, `.github/tests/`, `.github/copilot-instructions.md`, and `.github/AGENT-WORKFLOW.md` — these are template tooling, not part of your published repo
-
-**Folder conventions:**
-
-- Attendee step-by-step guidance goes in `instructions/`. If you use MkDocs or a docs site instead, put it in `docs/` and link to it from this README.
-- Reference material and background reading go in `docs/`.
-- You can add a `.devcontainer/` folder if needed.
-
----
-
-<a name="start-building"></a>
-
 <p align="center">
 <img src="img/banner-ignite-26.png" alt="Microsoft Ignite 2026" width="100%"/>
 </p>
@@ -43,9 +15,9 @@ Step into the role of a sales leader at Zava, a fictional specialty coffee roast
 
 If you're following along during a live session:
 
-1. Sign in to the lab environment with the credentials on the **Instructions** tab.
-2. Open Microsoft 365 Copilot at `https://m365.cloud.microsoft/chat`.
-3. Follow the steps in [`instructions/`](instructions/README.md), starting with Scenario 1.
+1. Sign in to the lab computer and open Microsoft 365 Copilot at `https://m365.cloud.microsoft/chat` with the lab account on the **Instructions** tab.
+2. Connect Copilot to Dynamics 365 by checking the three settings on the **Connect Copilot to Dynamics 365** page.
+3. Work through Scenario 1 and Scenario 2 in the [lab guide](instructions/lab671-instructions.md).
 
 #### On your own
 
@@ -68,10 +40,11 @@ By the end of this session, you will be able to:
 
 ### 💻 Technologies used
 
-1. Work IQ
+1. [Work IQ](https://learn.microsoft.com/microsoft-365/copilot/extensibility/work-iq/)
 2. [Microsoft 365 Copilot](https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-overview)
 3. [Dynamics 365 Sales](https://learn.microsoft.com/dynamics365/sales/)
-4. [Microsoft Teams](https://learn.microsoft.com/microsoftteams/)
+4. [Microsoft Dataverse](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intro)
+5. [Microsoft Teams](https://learn.microsoft.com/microsoftteams/)
 
 ### 📚 Continue your learning
 
@@ -83,23 +56,6 @@ Pick your next step based on your learning style:
 | **[Microsoft AI Skills Navigator](https://aka.ms/ignite26-asn)** | Discover AI skills, learning paths, and resources for your next step |
 | **[Microsoft Learn](https://aka.ms/ignite26-learn)** | Official documentation and guided learning paths on these topics |
 | **[Microsoft Foundry Community](https://aka.ms/MicrosoftFoundryDiscord-Ignite26)** | Connect with other learners and experts in our Discord community |
-
-### 🌟 Microsoft Learn MCP Server
-
-<!-- Remove this section if the Microsoft Learn MCP Server is not relevant to the session. -->
-
-The Microsoft Learn MCP Server gives your AI agent direct access to Microsoft's official documentation — grounded, up-to-date answers about the topics in this session.
-
-**GitHub Copilot CLI** — Install with:
-
-```shell
-copilot plugin install microsoftdocs/mcp
-```
-
-**VS Code** — One-click install:  
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Learn_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft-learn&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
-
-For more information, visit the [Learn MCP Server repo](https://aka.ms/learnmcp).
 
 ## Content owners
 
